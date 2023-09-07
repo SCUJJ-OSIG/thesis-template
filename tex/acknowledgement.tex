@@ -1,0 +1,39 @@
+%-------------------------------------------------
+% FileName: acknowledgement.tex
+% Author: Safin (zhaoqid@zsc.edu.cn)
+% Version: 0.1
+% Date: 2020-05-12
+% Description: 致谢
+% Others: 
+% History: origin
+%------------------------------------------------- 
+
+% 以下不用改动-------------------------------------
+% 断页
+\clearpage
+% hyperef 精确定位
+% 设置一个anchor，主要针对\addcontentsline
+% 防止目录，书签等指向错误位置 
+\phantomsection
+%增加到目录，与chapter同级别
+\addcontentsline{toc}{chapter}{\defacknowledgement}
+% \chapter*{} 表示不编号，不生成目录
+% \markboth{}{} 用于页眉
+\chapter*{ \markboth{\defacknowledgement}{}}
+
+%这里不知道怎么居中，就采用累加环境居中（可能描述有问题）
+\begin{center}
+    \centering{\defacknowledgement}
+\end{center}
+
+
+% 修改{}中的内容---------------------------------
+\acknowledgement{
+
+简述自己通过毕业设计（论文）的体会，向给予指导、合作、支持及协助完成研究工作的单位、组织或个人致谢。致谢的文字虽不多，却是论文不可缺少的内容。内容应简洁明了、实事求是，避免俗套。
+
+第二段致谢。
+
+第三段致谢。
+} 
+

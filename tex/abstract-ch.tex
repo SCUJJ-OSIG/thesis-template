@@ -1,0 +1,58 @@
+%-------------------------------------------------
+% FileName: abstract-ch.tex
+% Author: Safin (zhaoqid@zsc.edu.cn)
+% Version: 0.1
+% Date: 2020-05-12
+% Description: 中文摘要
+% Others: 
+% History: origin
+%------------------------------------------------- 
+
+% 以下不用改动-------------------------------------
+% 断页
+\clearpage
+% 页码从1开始计数
+\setcounter{page}{1}
+% 大写罗马数字显示页码
+\pagenumbering{Roman}
+% 加入书签, bm@abstractname要唯一
+\currentpdfbookmark{\defabstractname}{bm@abstractname}
+% \chapter*{} 表示不编号，不生成目录
+% \markboth{}{} 用于页眉
+% 此处以中文题目作为章题目
+%\chapter*{\centering{\deftitle}}
+
+
+\markboth{\defabstractname}{}
+
+%专业一行
+
+
+
+%学生老师一行
+\begin{center}
+    {\zihao{3}\heiti {\deftitle}} \\
+    \vspace*{1em}
+    {\defmajor} \ 专业
+    \\
+    %空一行
+    \vspace*{1em}
+    学生：{\defstudent} 指导老师：{\defadvisor}
+\end{center}
+
+% 修改摘要和关键词---------------------------------
+% 中文摘要
+
+\abstract{
+    qDou---豆瓣Symbian客户端，采用的是Qt进行编写。豆瓣是一家Web2.0网站，豆瓣主要通过用户点击及购买电子商务网站的相关产品，来获得收入。
+    本次设计的qDou将主要是采用Qt的Graphics View框架编写，部分框架运用Declarative UI(Qt的下一代控件)，在与豆瓣官方数据接口的交换上，利用豆瓣提供的Api key，通过OAuth协议进行对豆瓣数据的访问，修改以及提交。
+    利用豆瓣网提供的API结合Qt的下一代控件Declarative UI 轻松的实现了具有平滑，收放自如, 动态变换的一款豆瓣客户端，这种控件主要针对于移动平台上，比如手机或者上网本。采用Qml语言使开发者和设计者在完成他们工作的时候更多的高效。另一方面这种简单易学的语言，是那些不熟悉C++的开发人员可以方便的使用Qt。为了保护豆瓣用户私有数据的安全，豆瓣采用OAuth协议来完成数据的写入，修改和删除。
+    S60下豆瓣客户端新增了如搜索书籍，电影，音乐查询，收发豆邮等更强大的功能,同时你可以读取他们的评论,看看其他豆瓣的用户对这个条目时什么观点或者推荐好的条目给你的好友。另一方面，qdou 提供了朋友之间的数据可视化，通过豆瓣这个巨大的网络，你可以发现你与其他人之间的联系，共同的爱好.这些功能满足了时下网络社交生活的需要，更增加了无穷乐趣。由于使用Qt进行开发，所以qDou可以轻松的发布到Symbian Maemo,webOs,甚至Android上。
+    
+}
+
+% 中文关键词 空格：\ （反斜杠后跟空格）  使用命令~
+% 关键词是供检索用的主题词条，应采用能覆盖毕业设计（论文）主要内容的通用技术词条（参照相应的技术术语标准）。关键词一般为3～5个，每个关键词不超过5个字。
+\keywords{毕业设计 \ 作品 \ 技术\ 结果；意义}
+
+
